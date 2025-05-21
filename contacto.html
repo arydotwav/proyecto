@@ -2,7 +2,8 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>GOATS</title>
+  <title>FKA</title>
+  <link rel="icon" type="image/png" href="/images/logo.png">
   <link rel="stylesheet" href="css/estilos.css">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -21,7 +22,7 @@
     </nav>
 </header>
 
-  <h1 class="text-4xl py-16 text-gray-200 font-bold text-center">Te gustaria saber mas?<br>Mandame tu opinion :)</h1>
+  <h1 class="text-4xl pt-16 text-gray-200 font-bold text-center">Te gustaria saber mas?<br>Mandame tu opinion :)</h1>
 
   <p class="text-center text-gray-400 my-8">
     O escribime en: <a target="_blank" href="mailto:contacto@musica.com" class="underline text-blue-400 hover:text-blue-300">contacto@ary.com</a>
@@ -29,19 +30,19 @@
 
   <form action="gracias.html" method="get" class="max-w-lg mx-auto p-8 bg-neutral-900 border border-neutral-700 rounded-xl shadow-lg space-y-6">
     <div>
-      <label class="block text-gray-300 font-medium mb-1" for="nombre">Nombre</label>
+      <label class=" text-gray-300 font-medium mb-1" for="nombre">Nombre</label>
       <input type="text" name="nombre" id="nombre" required
         class="w-full bg-neutral-800 text-white border border-neutral-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition">
     </div>
   
     <div>
-      <label class="block text-gray-300 font-medium mb-1" for="email">Email</label>
+      <label class=" text-gray-300 font-medium mb-1" for="email">Email</label>
       <input type="email" name="email" id="email" required
         class="w-full bg-neutral-800 text-white border border-neutral-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition">
     </div>
   
     <div>
-      <label class="block text-gray-300 font-medium mb-1" for="mensaje">Mensaje</label>
+      <label class=" text-gray-300 font-medium mb-1" for="mensaje">Mensaje</label>
       <textarea name="mensaje" id="mensaje" rows="5"
         class="w-full bg-neutral-800 text-white border border-neutral-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"></textarea>
     </div>
@@ -51,5 +52,11 @@
         class="w-full bg-blue-600 text-white font-medium py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200">Enviar</button>
     </div>
   </form>
-  
+  <footer class="footer flex justify-between text-xs">
+    <p class="text-gray-300">&copy; Ariana Ruiz. 3er Año | Desarrollo de Software @ CRUI</p>
+    <div class="flex">
+      <a class="hover:underline hover:cursor-pointer">Instagram</a>
+      <a class="hover:underline hover:cursor-pointer">LinkedIn</a>
+    </div>
+  </footer>  
 </body>
