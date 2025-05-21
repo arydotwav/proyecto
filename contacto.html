@@ -7,46 +7,49 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-black">
-    <header class="sticky top-0 justify-between">
-        <div class="flex items-center gap-2">
-            <img src="https://www.pngkey.com/png/full/192-1928109_download-radiohead-logo.png" alt="Logo música" class="logo">
-            <p class="text-md font-bold">Radiohead in the industry</p>
-        </div>
-        <nav>
-          <a href="index.html">Inicio</a>
-          <a href="influencia.html">Influencia</a>
-          <a href="historia.html">Historia</a>
-          <a href="hits.html">Hits</a>
-          <a href="contacto.html">Contacto</a>
-        </nav>
-      </header>
+<header class="sticky top-0 justify-between bg-black/50 backdrop-blur-md p-1">
+    <div class="flex items-center gap-2 mx-2">
+        <img src="/images/logo.png" alt="Logo música" class="logo size-10  animate-pulse">
+        <p class="text-md font-bold text-white">FKA twigs</p>
+    </div>
+    <nav>
+      <a class="text-white" href="index.html">Home</a>
+      <a class="text-white" href="identidad.html">Identidad</a>
+      <a class="text-white" href="hits.html">Música</a>      
+      <a class="text-white" href="videografia.html">Videografia</a>
+      <a class="text-white" href="contacto.html">Contacto</a>
+    </nav>
+</header>
 
-  <h1 class="text-4xl py-16 text-gray-200 font-bold text-center">Opinas igual que yo? o no? <br>Mandame tu opinion :)</h1>
+  <h1 class="text-4xl py-16 text-gray-200 font-bold text-center">Te gustaria saber mas?<br>Mandame tu opinion :)</h1>
 
-  <form action="gracias.html" method="get" class="max-w-md mx-auto p-6 bg-white rounded-xl shadow-md space-y-4">
+  <p class="text-center text-gray-400 my-8">
+    O escribime en: <a target="_blank" href="mailto:contacto@musica.com" class="underline text-blue-400 hover:text-blue-300">contacto@ary.com</a>
+  </p>
+
+  <form action="gracias.html" method="get" class="max-w-lg mx-auto p-8 bg-neutral-900 border border-neutral-700 rounded-xl shadow-lg space-y-6">
     <div>
-      <label class="block text-gray-700 font-semibold mb-1">Nombre:</label>
-      <input type="text" name="nombre" required
-        class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+      <label class="block text-gray-300 font-medium mb-1" for="nombre">Nombre</label>
+      <input type="text" name="nombre" id="nombre" required
+        class="w-full bg-neutral-800 text-white border border-neutral-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition">
     </div>
   
     <div>
-      <label class="block text-gray-700 font-semibold mb-1">Email:</label>
-      <input type="email" name="email" required
-        class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+      <label class="block text-gray-300 font-medium mb-1" for="email">Email</label>
+      <input type="email" name="email" id="email" required
+        class="w-full bg-neutral-800 text-white border border-neutral-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition">
     </div>
   
     <div>
-      <label class="block text-gray-700 font-semibold mb-1">Mensaje:</label>
-      <textarea name="mensaje" rows="4"
-        class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+      <label class="block text-gray-300 font-medium mb-1" for="mensaje">Mensaje</label>
+      <textarea name="mensaje" id="mensaje" rows="5"
+        class="w-full bg-neutral-800 text-white border border-neutral-700 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"></textarea>
     </div>
   
     <div>
-      <input type="submit" value="Enviar"
-        class="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition">
+      <button type="submit"
+        class="w-full bg-blue-600 text-white font-medium py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200">Enviar</button>
     </div>
-  </form>  
+  </form>
   
-  <p>También podés escribirnos a: <a href="mailto:contacto@musica.com">contacto@musica.com</a></p>
 </body>

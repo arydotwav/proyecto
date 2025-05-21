@@ -7,28 +7,82 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-black">
-  <header class="sticky top-0 justify-between">
-    <div class="flex items-center gap-2">
-        <img src="https://www.pngkey.com/png/full/192-1928109_download-radiohead-logo.png" alt="Logo música" class="logo">
-        <p class="text-md font-bold">Radiohead in the industry</p>
+  <header class="sticky top-0 justify-between bg-black/50 backdrop-blur-md p-1">
+    <div class="flex items-center gap-2 mx-2">
+        <img src="/images/logo.png" alt="Logo música" class="logo size-10  animate-pulse">
+        <p class="text-md font-bold text-white">FKA twigs</p>
     </div>
     <nav>
-      <a href="index.html">Inicio</a>
-      <a href="influencia.html">Influencia</a>
-      <a href="historia.html">Historia</a>
-      <a href="hits.html">Hits</a>
-      <a href="contacto.html">Contacto</a>
+      <a class="text-white" href="index.html">Home</a>
+      <a class="text-white" href="identidad.html">Identidad</a>
+      <a class="text-white" href="hits.html">Música</a>
+      <a class="text-white" href="videografia.html">Videografia</a>
+      <a class="text-white" href="contacto.html">Contacto</a>
     </nav>
-  </header>
+</header>
   <section>
-
     <div class="flex flex-col mx-20 items-center justify-center my-10">
+      <div class="max-w-3xl">
+        <h1 class="text-4xl text-white font-bold my-4">Fka twigs y la industria musical</h1>
+        <div class="my-10">
+          <video controls width="100%" class="border-4 rounded">
+            <source src="/video/FKA twigs - Perfect Stranger.mp4" type="video/mp4">
+            Tu navegador no soporta videos HTML5.
+          </video>
+          <p class="text-gray-700 text-xs">Video Musical de Perfect Stranger, estrenado el 17 de octubre de 2024</p>
+        </div>
 
-      <p class="text-white">Radiohead tiene un sin fin de hits. <br>Estos son algunos de mis favoritos
-      </p>
+        <div class="flex flex-col gap-4 text-white">
+          <p>A lo largo de su carrera, FKA twigs ha lanzado cuatro albums de estudio. Con LP1 (2014), su primer álbum, logro consolidar su posición como una figura innovadora, fusionando R&B alternativo, electrónica, y una narrativa íntima con una estética audiovisual inconfundible. Su siguiente trabajo, MAGDALENE (2019), marcó una evolución emocional y conceptual, explorando temas como la vulnerabilidad, la fe y la reconstrucción personal.</p>
 
-      <div class="border-4 my-4 rounded">
-        <iframe src="/video/Radiohead - Jigsaw Falling Into Place.mp4" width="640" height="360" frameborder="0"></iframe>
+          <p>En 2022, lanzó CAPRISONGS, una mixtape más "accesible" o amigable con el público general, que la mostró en una faceta más luminosa, sin abandonar su sofisticación artística.</p> 
+          
+          <p>Ya en 2024, FKA twigs presentó EUSEXUA, un proyecto multimedia que no solo incluye música sino también performance y dirección visual. Con este trabajo, reafirma su enfoque transdisciplinario y su capacidad para innovar tanto en lo sonoro como en lo escénico.</p>
+          
+          <p>EUSEXUA expande sus exploraciones sobre el cuerpo, la feminidad, el deseo y la identidad, llevándolas a un nuevo nivel de experimentación visual y conceptual. Con este lanzamiento, no solo se mantiene vigente, sino que reafirma su estatus como una de las artistas más vanguardistas y completas del panorama musical contemporáneo.</p>
+  
+          <p class="text-white">Aún asi, y por todos los puntos mencionados anteriormente, FKA twigs no es especialmente apreciada en y por la industria de la música, pero creo que si te gusta el arte, entonces le deberias dar una oportunidad; tiene canciones que no creo que vayas a encontrar en tu artista convencional.
+          </p>
+        </div>
+
+        <hr class="my-16">
+
+        <p class="text-white mb-10 text-xs font-bold">Estas son algunas de mis recomendaciones :)</p>
+        <div class="overflow-x-auto shadow">
+          <table class="min-w-full text-sm text-left text-gray-300">
+            <thead>
+              <th scope="col" class="px-4 py-3">Canción</th>
+              <th scope="col" class="px-4 py-3">Álbum</th>
+            </thead>
+            <tbody>
+              <tr >
+                <td class="px-4 py-3 text-xs">mirrored heart</td>
+                <td class="px-4 py-3 text-xs">MAGDALENE</td>
+              </tr>
+              <tr >
+                <td class="px-4 py-3 text-xs">lightbeamers</td>
+                <td class="px-4 py-3 text-xs">CAPRISONGS</td>
+              </tr>
+              <tr >
+                <td class="px-4 py-3 text-xs">fallen alien</td>
+                <td class="px-4 py-3 text-xs">MAGDALENE</td>
+              </tr>
+              <tr >
+                <td class="px-4 py-3 text-xs">Eusexua</td>
+                <td class="px-4 py-3 text-xs">EUSEXUA</td>
+              </tr>
+              <tr >
+                <td class="px-4 py-3 text-xs">Lights On</td>
+                <td class="px-4 py-3 text-xs">LP1</td>
+              </tr>
+              <tr >
+                <td class="px-4 py-3 text-xs">Cellophane</td>
+                <td class="px-4 py-3 text-xs">MAGDALENE</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
       </div>
     </div>
 

@@ -23,6 +23,10 @@
     z-index: 1000;
   }
 
+  #start {
+    animation: appear 2s linear forwards;
+  }
+
   .logo {
     width: 50px;
     height: auto;
@@ -88,3 +92,48 @@
         opacity: 100;
     }
   }
+
+  .scroll-wrapper {
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .scroll-track {
+    display: flex;
+    gap: 0.5rem;
+    animation: scroll-x 65s 1s linear infinite;
+    width: max-content;
+  }
+  
+  .scroll-img {
+    width: 10rem;
+    height: 8rem;
+    object-fit: cover;
+  }
+  
+  @keyframes scroll-x {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+}
+
+@font-face {
+  font-family: 'Akira';
+  src: url('/fonts/Akira\ Expanded\ Demo.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Alte';
+  src: url('/fonts/AlteHaasGroteskRegular.ttf') format('truetype');
+}
+
+#title, h1 {
+  font-family: Akira;
+}
+
+.info-general {
+  font-family: Alte;
+}
